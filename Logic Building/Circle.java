@@ -1,14 +1,16 @@
-import java.util.*;
+import java.util.Scanner;
+
 class Circle{
 	public static void main(String args[]){
-		float radius;
+		float r;
+		final float PI = 3.14f;
 		Scanner scan = new Scanner(System.in);
-		
+
 		System.out.println("Enter the Radius: ");
-		radius = scan.nextFloat();
-		
-		System.out.println("Perimeter is = "+(2*Math.PI*radius));
-		System.out.println("Area is = "+(Math.PI*radius*radius));
+		r = scan.nextInt();
+
+		System.out.println("Diameter of Circle: "+(2*r));
+		System.out.println("Circumference of Circle: "+(2*PI*r));
+		System.out.println("Area of Circle: "+(PI*r*r));
 	}
 }
-		
